@@ -13,7 +13,7 @@ Após executar e subir o Kafka acima, você pode subir um consumer via CLI, ou p
 
 > kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic demo_java 
 
-# Principais Tópicos
+# Sobre o Apache Kafka
 
 O Apache Kafka é uma plataforma de streaming distribuída e de código aberto projetada para construir pipelines de dados em tempo real e aplicativos de streaming.
 
