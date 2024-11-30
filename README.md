@@ -7,6 +7,8 @@ Esse yaml foi criado pela Conduktor e existem mais opções aqui [link](https://
 
 > docker-compose -f zk-single-kafka-single up -d
 
+* O zookeper já esta meio descontinuado, mas mais para frente a gente fala sobre isso, confia; 
+
 # Consumidor kafka via CLI 
 
 Após executar e subir o Kafka acima, você pode subir um consumer via CLI, ou pelo ConsumerDemo.
