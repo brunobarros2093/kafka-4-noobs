@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>kafka-basics</module>
+        <module>kafka-basics-java-example</module>
     </modules>
   <dependencies>
       <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
@@ -26,10 +26,19 @@
       </dependency>
 
       <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+      <!-- scope runtime: sem ele os logs dos demos não aparecem ao executar o main -->
       <dependency>
           <groupId>org.slf4j</groupId>
           <artifactId>slf4j-simple</artifactId>
           <version>1.7.36</version>
+          <scope>runtime</scope>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter</artifactId>
+          <version>5.10.3</version>
           <scope>test</scope>
       </dependency>
 
@@ -41,5 +50,15 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
